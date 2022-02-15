@@ -1,0 +1,40 @@
+h1
+{
+	text-align: center;
+	font-family: georgia, serif;
+	font-size: 30pt;
+}
+
+h2
+{
+	font-family: georgia, serif;
+	font-size: 20pt;
+}
+
+h3
+{
+	font-family: georgia, serif;
+	font-size: 15pt;
+	font-weight: 20
+}
+
+li
+{
+	font-family: verdana, sans-serif;
+	font-size: 10pt;
+}
+	
+p
+{
+	text-align: justify;
+	font-family: verdana, sans-serif;
+	font-size: 10pt;
+}
+
+.centre
+{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}

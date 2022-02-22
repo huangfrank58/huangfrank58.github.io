@@ -1,40 +1,255 @@
+body
+{
+	background-color: rgb(221, 216, 184)
+}
+
 h1
 {
-	text-align: center;
+	;
 	font-family: georgia, serif;
-	font-size: 30pt;
+	font-size: 50pt;
 }
 
 h2
 {
 	font-family: georgia, serif;
-	font-size: 20pt;
-}
+	text-align: center;
+	margin-top: 0;
+	padding-top: 2%;
+	font-size: 30pt;
+	background-color: rgb(109, 198, 242);
+	width: 100%;
+} 
 
 h3
 {
 	font-family: georgia, serif;
-	font-size: 15pt;
-	font-weight: 20
+	text-align: center;
+	font-size: 24pt;
+}
+
+h4
+{
+	font-family: georgia, serif;
+	text-align: center;
+	font-size: 18pt;
 }
 
 li
 {
 	font-family: verdana, sans-serif;
-	font-size: 10pt;
+	font-size: 14pt;
 }
 	
 p
 {
 	text-align: justify;
 	font-family: verdana, sans-serif;
-	font-size: 10pt;
+	font-size: 14pt;
+	color: black;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 1%
 }
 
-.centre
+.Caption
 {
-	display:block;
+	font-size: 12pt;
+	font-style: italic;
+}
+
+.Flex_Container
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.Information
+{
+	background-color: rgb(239, 247, 218);
+	border-style: solid;
+	border-width: 3px;
+}
+
+.Navigation_Bar ul
+{
+	list-style-type: none;
+	margin: 0;
+	left: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgb(54, 50, 42);
+	position: fixed;
+	top: 0;
+	width: 100%;	
+}
+.Navigation_Bar a
+{
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	color: white;
+	font-size: 28px;
+}
+
+.Navigation_Bar a:hover
+{
+	background-color: white;
+	color: rgb(54, 50, 42);
+}
+
+.Navigation_Bar a.active
+{
+	background-color: rgb(42, 219, 142);
+	color: white;
+}
+
+.Main_Background
+{
+	background-image: url("Images/Background.png");
+	background-position: center;
+	height: 600px;
+	color: white;
+	padding: 0;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+}
+.Background_Text
+{
+	text-align: center;
+	color: white;
+	padding-top: 200px
+}
+#Vertical_Align
+{
+	margin-top: 2%;
+	margin-left: 2%;
+	width: 30%;
+}
+
+#Table_of_Contents
+{
+	width: 100%;
+	margin-left: 2%;
+	height: 520px
+}
+
+#COVID-19_Render
+{
+	height: 420px;
+	width: 100%;
+	background-color: rgb(239, 247, 218);
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+	margin-left: 2%;
+	padding: 0;
+	margin-top: 8%;
+	text-align: center;
+}
+
+#COVID-19_Render p
+{
+	padding-top: 1%
+}
+
+#COVID-19_Close_Up
+{
+	width: 98%;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+}
+                                                                                                                                                                     
+#Introduction
+{
+	margin-top: 2%;
+	width: 60%;
+	margin-left: 5%;
+}
+
+#Symptoms
+{
+	margin-top: 3%;
+	width: 96%;
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
+}
+
+.List
+{
+	display: table;
+	margin-left: 5%;
+}
+
+.Column1
+{
+	width: 46.5%;
+	margin-left: 2%;
+}
+
+.Column2
+{
+	width: 46.5%;
+	margin-left: 3%;
+}
+
+#Symptom_Illustration
+{
+	width: 80%;
+	border-style: solid;
+	border-width: 3px;
+	margin-left: 7%;
+}
+
+#Preventative_Measures
+{
+	margin-top: 2%;
+	margin-left: 2%;
+	width: 96%;
+}
+
+#Variants
+{
+	margin-top: 2%;
+	margin-left: 2%;
+	width: 96%;
+}
+
+#COVID-19_Impact
+{
+	margin-top: 2%;
+	margin-left: 2%;
+	width: 60%;
+}
+
+#Bibliography
+{
+	margin-top: 2%;
+	margin-left: 2%;
+	width: 96%;
+	margin-bottom: 2%;
+}
+
+#COVID-19_Flags
+{
+	margin-top: 2%;
+	height: 500px;
+	width: 33%;
+	margin-left: 3%;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+}
+
+#COVID-19_Flags_Illustration
+{
+	margin-left: 0;	
+	width: 100%;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
 }

@@ -1,7 +1,10 @@
 /*Background Colour of the website*/
 body
 {
-	background-color: rgb(221, 216, 184)
+	background-color: rgb(221, 216, 184);
+	background-image: url("Images/Background_Image.jpg");
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 /*General text and header formatting*/
@@ -65,7 +68,6 @@ p
 .Flex_Container
 {
 	display: flex;
-	flex-wrap: wrap;
 }
 
 /*General formatting for all*/
@@ -131,7 +133,7 @@ p
 /*Formatting that differentiates the current page from other links in the navigation bar*/
 .Navigation_Bar a.active
 {
-	background-color: rgb(42, 219, 142);
+	background-color: rgb(109, 198, 242);
 	color: white;
 }
 
@@ -150,6 +152,7 @@ p
 }
 
 /*Formatting for the banner*/
+
 .Main_Banner
 {
 	margin-top: 0;
@@ -173,13 +176,19 @@ p
 }
 
 
-#Banner_Credit
+.Banner_Credit_Div
 {
-	color: black;
-	text-align: center;
+	display: block;
+	width: 20%;
+	margin-left: 80%;
+	margin-top: 200px;
+}
+
+.Banner_Credit
+{
 	font-size: 12pt;
 	font-style: italic;
-	margin-bottom: 1%;
+	color: black;
 }
 
 /*To align divisions vertically, I created a enclosing division that would have the content divisions within it. Formatting for the larger enclosing division*/
@@ -246,16 +255,34 @@ p
 
 #Preventative_Measures
 {
-	margin-top: 2%;
-	margin-left: 2%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	width: 96%;
+	margin-top: 2%;
 }
 
 #Variants
 {
-	margin-top: 2%;
-	margin-left: 2%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	width: 96%;
+	margin-top: 2%;
+}
+
+#Politicization
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 96%;
+	margin-top: 2%;
+}
+
+#NZ_Convoy
+{
+	width: 40%;
 }
 
 #COVID-19_Impact
@@ -263,14 +290,6 @@ p
 	margin-top: 2%;
 	margin-left: 2%;
 	width: 60%;
-}
-
-#Bibliography
-{
-	margin-top: 2%;
-	margin-left: 2%;
-	width: 96%;
-	margin-bottom: 2%;
 }
 
 #COVID-19_Flags
@@ -291,6 +310,14 @@ p
 	border-style: solid;
 	border-width: 3px;
 	border-color: black;
+}
+
+#Bibliography
+{
+	margin-top: 2%;
+	margin-left: 2%;
+	width: 96%;
+	margin-bottom: 2%;
 }
 
 /*Formatting for citations*/
@@ -331,16 +358,25 @@ p
 /*Formatting for Validator links*/
 .Validator_Links
 {
-	display: flex;
 	width: 96%;
 	margin: auto;
 	margin-top: 2%;
-	align-items: center;
+}
+
+.Validator_Links p
+{
+	text-align: center;
 }
 
 .Validator_Links img
 {
-	display: block;
-	margin: auto;
 	width: 7%;
+}
+
+#Validators_Div
+{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin: auto;
 }

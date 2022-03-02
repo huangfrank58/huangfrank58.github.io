@@ -56,6 +56,11 @@ p
 	padding-top: 1%
 }
 
+span /*Used to bold and emphasize new and important words*/
+{
+	font-weight: bold;
+}
+
 /*Captions for images are italicized to differentiate them from regular text*/
 .Caption
 {

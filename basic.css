@@ -4,7 +4,7 @@ body
 	background-color: rgb(221, 216, 184);
 	background-image: url("Images/Background_Image.jpg");
 	background-size: cover;
-	background-attachment: fixed;
+	background-attachment: fixed; /*Creates a parallax effect*/
 }
 
 /*General text and header formatting*/
@@ -14,8 +14,7 @@ h1
 	font-size: 50pt;
 }
 
-/*Formatting for Header 2s, which are used as headers for content divisions*/
-h2
+h2 /*Formatting for Header 2s, which are used as headers for content divisions*/
 {
 	font-family: georgia, serif;
 	text-align: center;
@@ -76,6 +75,18 @@ p
 	background-color: rgb(239, 247, 218);
 	border-style: solid;
 	border-width: 3px;
+}
+
+/*Formatting for images within a column of text*/
+.In_Text_Image
+{
+	display: block;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+	padding-bottom: 0;
+	width: 80%;
+	margin: auto;
 }
 
 /*Formatting for general lists in content divisions*/
@@ -158,6 +169,8 @@ p
 	margin-top: 0;
 	background-image: url("Images/Background.png"); /*Uses the listed image as the background image for the banner division*/
 	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
 	height: 600px;
 	color: white;
 	padding: 0;
@@ -175,7 +188,7 @@ p
 	padding-top: 200px
 }
 
-
+/*Formatting for the div containing the banner image credit*/
 .Banner_Credit_Div
 {
 	display: block;
@@ -208,7 +221,7 @@ p
 }
 
 /*Formatting for division containing image of artist's impression of the SARS-CoV-2 virus*/
-#COVID-19_Render
+#COVID-19_Render_Div
 {
 	width: 100%;
 	margin-left: 0%;
@@ -217,19 +230,20 @@ p
 	text-align: center;
 }
 
-#COVID-19_Render p
+#COVID-19_Render_Div p
 {
 	padding-top: 1%
 }
 
-#COVID-19_Close_Up
+#COVID-19_Render
 {
 	width: 98%;
 	border-style: solid;
 	border-width: 3px;
 	border-color: black;
 }
-                                                                                                                                                                     
+
+/*Formatting for information divisions and images enclosed within them*/
 #Introduction
 {
 	margin-top: 2%;
@@ -312,14 +326,6 @@ p
 	border-color: black;
 }
 
-#Bibliography
-{
-	margin-top: 2%;
-	margin-left: 2%;
-	width: 96%;
-	margin-bottom: 2%;
-}
-
 /*Formatting for citations*/
 .Citations
 {
@@ -343,19 +349,7 @@ p
 	margin-bottom: 2%;
 }
 
-/*Formatting for images within a column of text*/
-.In_Text_Image
-{
-	display: block;
-	border-style: solid;
-	border-width: 3px;
-	border-color: black;
-	padding-bottom: 0;
-	width: 80%;
-	margin: auto;
-}
-
-/*Formatting for Validator links*/
+/*Formatting for validator links on the main page*/
 .Validator_Links
 {
 	width: 96%;
@@ -368,15 +362,23 @@ p
 	text-align: center;
 }
 
-.Validator_Links img
-{
-	width: 7%;
-}
-
 #Validators_Div
 {
 	display: flex;
 	width: 100%;
 	justify-content: center;
 	margin: auto;
+}
+
+#Validator_Images
+{
+	width: 100%;
+}
+
+/*Formatting for validators on the bibliography page*/
+#Bibliography_Validator
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
